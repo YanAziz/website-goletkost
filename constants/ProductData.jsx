@@ -22,6 +22,7 @@ export const PROPERTIES_KONTRAKAN = [
       bedrooms: 4,
       bathrooms: 2,
       wide: 50,
+      // parkings: 3,  parkings car
     },
     price: "12.000.000",
     area: "ump",
@@ -93,6 +94,7 @@ export const PROPERTIES_KOST = [
     price: "8.500.000",
     rating: 4.5,
     range: "0.1 km - F.Ilmu Budaya",
+    // bathroom: "dalam", kamar mandi
     area: "unsoed",
   },
   {
