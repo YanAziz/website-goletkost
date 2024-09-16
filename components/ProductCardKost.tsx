@@ -1,22 +1,23 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
-import { Star, User, Wallet } from "lucide-react";
+import { BathIcon, Star, User, Wallet } from "lucide-react";
 
 interface PropertyKost {
   title: string;
-  type: string;
   images: {
     img1: StaticImageData;
     img2: StaticImageData;
     img3: StaticImageData;
   };
   facilities: string;
-  luas: string;
+  note: string;
+  wide: string;
   gender: string;
   price: string;
   rating: number;
-  range: string;
-  area: string;
+  bathroom: string;
+  area: string | string[];
+  link: string;
 }
 
 const ProductCardKost = ({ property }: { property: PropertyKost }) => {
@@ -35,10 +36,12 @@ const ProductCardKost = ({ property }: { property: PropertyKost }) => {
       </div>
       <div className="pt-1 flex flex-col px-2 gap-1">
         <h1 className="text-sm font-semibold">{property.title}</h1>
-        <p className="text-xs">{property.range}</p>
         <p className="text-xs flex gap-1 items-center">
           <User className="w-4 h-4" />
           {property.gender}
+        </p>
+        <p className="text-xs flex gap-1 items-center">
+          <BathIcon className="w-4 h-4" /> Kamar mandi {property.bathroom}
         </p>
         <p className="text-xs flex gap-1 items-center">
           <Wallet className="w-4 h-4" />
