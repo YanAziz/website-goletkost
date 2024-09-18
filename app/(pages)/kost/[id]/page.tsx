@@ -16,46 +16,38 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowLeft, Bath, Star, User, Wallet } from "lucide-react";
 
-export function CarouselPlugin() {
-  const plugin = React.useRef(
-    Autoplay({ delay: 2500, stopOnInteraction: true })
-  );
-
-  const { id } = useParams();
-  const kost = PROPERTIES_KOST.find((kost) => kost.id === id);
-  const images = kost?.images ?? {};
-
-  return (
-    <Carousel plugins={[plugin.current]} className="w-full">
-      <CarouselContent>
-        {Object.keys(images).map((key: string, index: number) => (
-          <CarouselItem key={index}>
-            <div>
-              <Image
-                key={index}
-                src={images[key as keyof typeof images]}
-                alt={kost?.title || ""}
-                className="w-full object-cover rounded-b-lg"
-              />
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-    </Carousel>
-  );
-}
-
 const KostDetailPage = () => {
   const { id } = useParams();
   const kost = PROPERTIES_KOST.find((kost) => kost.id === id);
+
+  const plugin = React.useRef(
+    Autoplay({ delay: 2500, stopOnInteraction: true })
+  );
 
   if (!kost) {
     return <p>Kost tidak ditemukan</p>;
   }
 
+  const images = kost?.images ?? {};
+
   return (
     <div className="max-padd-container pt-16 flex flex-col gap-4">
-      <CarouselPlugin />
+      <Carousel plugins={[plugin.current]} className="w-full">
+        <CarouselContent>
+          {Object.keys(images).map((key: string, index: number) => (
+            <CarouselItem key={index}>
+              <div>
+                <Image
+                  key={index}
+                  src={images[key as keyof typeof images]}
+                  alt={kost?.title || ""}
+                  className="w-full object-cover rounded-b-lg"
+                />
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
       <h1 className="text-xl font-semibold">{kost.title}</h1>
       <hr />
       <div className="flex flex-col gap-1">
