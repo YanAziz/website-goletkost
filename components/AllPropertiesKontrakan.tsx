@@ -35,7 +35,7 @@ export function CarouselPlugin() {
           <CarouselItem className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
             <div className="pt-2 pb-4">
               <div className="bg-white rounded-lg shadow-lg p-4 w-full h-[450px] flex justify-center flex-col items-center">
-                <Link href="/products">Lihat lebih banyak</Link>
+                <Link href="/kontrakan">Lihat lebih banyak</Link>
                 <ArrowUpRight className="w-4 h-4" />
               </div>
             </div>
