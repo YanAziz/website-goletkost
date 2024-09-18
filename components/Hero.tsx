@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import iconImage from "@/public/assets/iconHero.png";
 import { ArrowUpRight, HeartHandshake, Video } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -20,14 +21,18 @@ const Hero = () => {
           <p className="text-md md:pl-1 md:font-medium">by GoletKost</p>
         </div>
         <div className="flex justify-center md:justify-start gap-x-2 pb-2">
-          <Button className="bg-gray-900 text-white gap-1" size="sm">
-            Cari kost
-            <ArrowUpRight className="w-4 h-4" />
-          </Button>
-          <Button className="bg-gray-900 text-white gap-1" size="sm">
-            Cari kontrakan
-            <ArrowUpRight className="w-4 h-4" />
-          </Button>
+          <Link href={"/kost"}>
+            <Button className="bg-gray-900 text-white gap-1" size="sm">
+              Cari kost
+              <ArrowUpRight className="w-4 h-4" />
+            </Button>
+          </Link>
+          <Link href={"/kontrakan"}>
+            <Button className="bg-gray-900 text-white gap-1" size="sm">
+              Cari kontrakan
+              <ArrowUpRight className="w-4 h-4" />
+            </Button>
+          </Link>
         </div>
         <div className="flex gap-x-4 gap-y-4 flex-col md:flex-row">
           <div className="flex flex-col justify-center items-center bg-white p-2 rounded-xl shadow-xl">

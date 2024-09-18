@@ -49,6 +49,7 @@ import imgkt45 from "../public/assets/img/kontrakan/9_UHB-UMPPusat_5.png";
 export const PROPERTIES_KONTRAKAN = [
   {
     title: "Kontrakan UMP Pusat 1", // masuk card
+    id: "kt-ump-pusat-1",
     images: {
       img1: imgkt1, // masuk card
       img2: imgkt2,
@@ -70,6 +71,7 @@ export const PROPERTIES_KONTRAKAN = [
   },
   {
     title: "Kontrakan UMP Pusat 2",
+    id: "kt-ump-pusat-2",
     images: {
       img1: imgkt6,
       img2: imgkt7,
@@ -91,6 +93,7 @@ export const PROPERTIES_KONTRAKAN = [
   },
   {
     title: "Kontrakan UHB & UMP Pusat 1",
+    id: "kt-uhb-ump-pusat-1",
     images: {
       img1: imgkt11,
       img2: imgkt12,
@@ -112,6 +115,7 @@ export const PROPERTIES_KONTRAKAN = [
   },
   {
     title: "Kontrakan UNSOED & UMP Pusat 1",
+    id: "kt-unsoed-ump-pusat-1",
     images: {
       img1: imgkt16,
       img2: imgkt17,
@@ -133,6 +137,7 @@ export const PROPERTIES_KONTRAKAN = [
   },
   {
     title: "Kontrakan Telkom & UNSOED 1",
+    id: "kt-telkom-unsoed-1",
     images: {
       img1: imgkt21,
       img2: imgkt22,
@@ -154,6 +159,7 @@ export const PROPERTIES_KONTRAKAN = [
   },
   {
     title: "Kontrakan UHB & UMP Pusat 2",
+    id: "kt-uhb-ump-pusat-2",
     images: {
       img1: imgkt26,
       img2: imgkt27,
@@ -175,6 +181,7 @@ export const PROPERTIES_KONTRAKAN = [
   },
   {
     title: "Kontrakan UHB & UMP Pusat 3",
+    id: "kt-uhb-ump-pusat-3",
     images: {
       img1: imgkt31,
       img2: imgkt32,
@@ -196,6 +203,7 @@ export const PROPERTIES_KONTRAKAN = [
   },
   {
     title: "Kontrakan UHB & UMP Pusat 4",
+    id: "kt-uhb-ump-pusat-4",
     images: {
       img1: imgkt36,
       img2: imgkt37,
@@ -217,6 +225,7 @@ export const PROPERTIES_KONTRAKAN = [
   },
   {
     title: "Kontrakan UHB & UMP Pusat 5",
+    id: "kt-uhb-ump-pusat-5",
     images: {
       img1: imgkt41,
       img2: imgkt42,
@@ -414,6 +423,7 @@ import imgks175 from "../public/assets/img/kost/35_UMPPusat_5.png";
 export const PROPERTIES_KOST = [
   {
     title: "Kost Unsoed Belakang 1", // masuk card
+    id: "ks-unsoed-belakang-1",
     images: {
       img1: imgks1, // masuk card
       img2: imgks2,
@@ -433,6 +443,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost Unsoed Belakang 2",
+    id: "ks-unsoed-belakang-2",
     images: {
       img1: imgks6,
       img2: imgks7,
@@ -452,6 +463,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost Unsoed Belakang 3 (AC)",
+    id: "ks-unsoed-belakang-3",
     images: {
       img1: imgks11,
       img2: imgks12,
@@ -471,6 +483,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost Unsoed Depan 1",
+    id: "ks-unsoed-depan-1",
     images: {
       img1: imgks16,
       img2: imgks17,
@@ -490,6 +503,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost Unsoed Kedokteran & UMP Kampus 2",
+    id: "ks-unsoed-kedokteran-ump-kampus-2",
     images: {
       img1: imgks21,
       img2: imgks22,
@@ -509,6 +523,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost Unsoed Tengah 1 (AC)",
+    id: "ks-unsoed-tengah-1",
     images: {
       img1: imgks26,
       img2: imgks27,
@@ -528,6 +543,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost Unsoed Tengah 2",
+    id: "ks-unsoed-tengah-2",
     images: {
       img1: imgks31,
       img2: imgks32,
@@ -547,6 +563,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost Unsoed Tengah 3",
+    id: "ks-unsoed-tengah-3",
     images: {
       img1: imgks36,
       img2: imgks37,
@@ -566,6 +583,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost Unsoed Tengah 4",
+    id: "ks-unsoed-tengah-4",
     images: {
       img1: imgks41,
       img2: imgks42,
@@ -585,6 +603,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost Unsoed Depan 2",
+    id: "ks-unsoed-depan-2",
     images: {
       img1: imgks46,
       img2: imgks47,
@@ -604,6 +623,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost Unsoed Depan 3",
+    id: "ks-unsoed-depan-3",
     images: {
       img1: imgks51,
       img2: imgks52,
@@ -623,6 +643,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost UMP Pusat 1",
+    id: "ks-ump-pusat-1",
     images: {
       img1: imgks56,
       img2: imgks57,
@@ -642,6 +663,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost UMP Pusat 2",
+    id: "ks-ump-pusat-2",
     images: {
       img1: imgks61,
       img2: imgks62,
@@ -661,6 +683,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost Arca 1",
+    id: "ks-arca-1",
     images: {
       img1: imgks66,
       img2: imgks67,
@@ -680,6 +703,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost Arca & Unsoed Belakang 1",
+    id: "ks-arca-unsoed-belakang-1",
     images: {
       img1: imgks71,
       img2: imgks72,
@@ -699,6 +723,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost Unsoed Tengah 5",
+    id: "ks-unsoed-tengah-5",
     images: {
       img1: imgks76,
       img2: imgks77,
@@ -718,6 +743,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost Unsoed Depan 4",
+    id: "ks-unsoed-depan-4",
     images: {
       img1: imgks81,
       img2: imgks82,
@@ -737,6 +763,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost Unsoed Belakang 4",
+    id: "ks-unsoed-belakang-4",
     images: {
       img1: imgks86,
       img2: imgks87,
@@ -756,6 +783,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost UMP Pusat 3",
+    id: "ks-ump-pusat-3",
     images: {
       img1: imgks91,
       img2: imgks92,
@@ -775,6 +803,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost UMP Pusat 4",
+    id: "ks-ump-pusat-4",
     images: {
       img1: imgks96,
       img2: imgks97,
@@ -794,6 +823,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost UMP Pusat 5",
+    id: "ks-ump-pusat-5",
     images: {
       img1: imgks101,
       img2: imgks102,
@@ -813,6 +843,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost UMP Pusat 6",
+    id: "ks-ump-pusat-6",
     images: {
       img1: imgks106,
       img2: imgks107,
@@ -832,6 +863,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost UMP Pusat 7",
+    id: "ks-ump-pusat-7",
     images: {
       img1: imgks111,
       img2: imgks112,
@@ -851,6 +883,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost Unsoed Tengah 6",
+    id: "ks-unsoed-tengah-6",
     images: {
       img1: imgks121,
       img2: imgks122,
@@ -870,6 +903,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost UMP Pusat 8 (AC)",
+    id: "ks-ump-pusat-8",
     images: {
       img1: imgks126,
       img2: imgks127,
@@ -889,6 +923,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost UMP Pusat 9",
+    id: "ks-ump-pusat-9",
     images: {
       img1: imgks131,
       img2: imgks132,
@@ -908,6 +943,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost UMP Pusat 10",
+    id: "ks-ump-pusat-10",
     images: {
       img1: imgks136,
       img2: imgks137,
@@ -927,6 +963,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost UMP Pusat 11",
+    id: "ks-ump-pusat-11",
     images: {
       img1: imgks141,
       img2: imgks142,
@@ -946,6 +983,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost UMP Pusat 12",
+    id: "ks-ump-pusat-12",
     images: {
       img1: imgks146,
       img2: imgks147,
@@ -965,6 +1003,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost UMP Pusat 13",
+    id: "ks-ump-pusat-13",
     images: {
       img1: imgks151,
       img2: imgks152,
@@ -984,6 +1023,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost UMP Pusat 14",
+    id: "ks-ump-pusat-14",
     images: {
       img1: imgks156,
       img2: imgks157,
@@ -1003,6 +1043,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost UMP Pusat 15",
+    id: "ks-ump-pusat-15",
     images: {
       img1: imgks161,
       img2: imgks162,
@@ -1022,6 +1063,7 @@ export const PROPERTIES_KOST = [
   },
   {
     title: "Kost UMP Pusat 16",
+    id: "ks-ump-pusat-16",
     images: {
       img1: imgks166,
       img2: imgks167,
@@ -1040,7 +1082,8 @@ export const PROPERTIES_KOST = [
     link: "",
   },
   {
-    title: "Kost UMP Pusat 17",
+    title: "Kost UHB & UMP Pusat 1",
+    id: "ks-uhb-ump-pusat-1",
     images: {
       img1: imgks171,
       img2: imgks172,
@@ -1055,7 +1098,7 @@ export const PROPERTIES_KOST = [
     price: "5.000.000",
     rating: 4.6,
     bathroom: "luar",
-    area: "ump",
+    area: ["ump", "uhb"],
     link: "",
   },
 ];

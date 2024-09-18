@@ -28,7 +28,7 @@ export const UnivLogos = [
     image: logo4,
   },
   {
-    url: "/poltekkes",
+    url: "/poltekkes-semarang",
     title: "Poltekkes Semarang",
     image: logo5,
   },

@@ -1,6 +1,6 @@
 import img from "@/public/assets/logo.jpg";
 
-import { LayoutDashboard, House, ContactRound } from "lucide-react";
+import { LayoutDashboard, House, ContactRound, Lamp } from "lucide-react";
 import {
   FaFacebook,
   FaInstagram,
@@ -22,9 +22,14 @@ export const NavLinks = [
     label: "Beranda",
   },
   {
-    url: "/products",
-    icon: <House />,
+    url: "/kost",
+    icon: <Lamp />,
     label: "Kost",
+  },
+  {
+    url: "/kontrakan",
+    icon: <House />,
+    label: "Kontrakan",
   },
   {
     url: "/contact",
