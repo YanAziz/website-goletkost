@@ -39,7 +39,7 @@ const Properties = () => {
               <Link href="/kost">
                 <div className="pt-2 pb-4">
                   <div className="bg-white rounded-lg shadow-lg p-4 h-[250px] w-full gap-2 flex justify-center flex-col items-center">
-                    <p className="text-base">Lihat lebih banyak</p>
+                    <p className="text-base">Lebih banyak</p>
                     <ArrowUpRight className="w-5 h-5" />
                   </div>
                 </div>

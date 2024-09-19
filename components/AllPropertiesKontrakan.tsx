@@ -37,8 +37,8 @@ const Properties = () => {
             <CarouselItem className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
               <Link href="/kontrakan">
                 <div className="pt-2 pb-4">
-                  <div className="bg-white rounded-lg shadow-lg p-4 w-full h-[450px] flex justify-center items-center gap-2">
-                    <p className="text-base">Lihat lebih banyak</p>
+                  <div className="bg-white rounded-lg shadow-lg p-4 w-full h-[350px] flex justify-center items-center gap-2">
+                    <p className="text-base">Lebih banyak</p>
                     <ArrowUpRight className="w-5 h-5" />
                   </div>
                 </div>

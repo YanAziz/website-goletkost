@@ -31,8 +31,8 @@ const KostDetailPage = () => {
   const images = kost?.images ?? {};
 
   return (
-    <div className="max-padd-container pt-16 flex flex-col gap-4">
-      <Carousel plugins={[plugin.current]} className="w-full">
+    <div className="max-padd-container pt-16 flex flex-col gap-4 lg:flex-row lg:pt-28 lg:justify-center lg:gap-8">
+      <Carousel plugins={[plugin.current]} className="w-full lg:w-80">
         <CarouselContent>
           {Object.keys(images).map((key: string, index: number) => (
             <CarouselItem key={index}>
@@ -41,44 +41,46 @@ const KostDetailPage = () => {
                   key={index}
                   src={images[key as keyof typeof images]}
                   alt={kost?.title || ""}
-                  className="w-full object-cover rounded-b-lg"
+                  className="w-full object-cover rounded-b-lg lg:rounded-lg"
                 />
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
       </Carousel>
-      <h1 className="text-xl font-semibold">{kost.title}</h1>
-      <hr />
-      <div className="flex flex-col gap-1">
-        <div className="flex items-center gap-1">
-          <User className="w-4 h-4" />
-          <p className="text-sm">{kost.gender}</p>
+      <div className="lg:flex lg:flex-col lg:gap-4">
+        <h1 className="text-xl font-semibold">{kost.title}</h1>
+        <hr />
+        <div className="flex flex-col gap-1">
+          <div className="flex items-center gap-1">
+            <User className="w-4 h-4" />
+            <p className="text-sm">{kost.gender}</p>
+          </div>
+          <div className="flex items-center gap-1">
+            <Star className="w-4 h-4" />
+            <p className="text-sm">{kost.rating}</p>
+          </div>
+          <div className="flex items-center gap-1">
+            <Wallet className="w-4 h-4" />
+            <p className="text-sm">Rp. {kost.price} /th</p>
+          </div>
+          <div className="flex items-center gap-1">
+            <Bath className="w-4 h-4" />
+            <p className="text-sm">Kamar mandi {kost.bathroom}</p>
+          </div>
         </div>
-        <div className="flex items-center gap-1">
-          <Star className="w-4 h-4" />
-          <p className="text-sm">{kost.rating}</p>
+        <div>
+          <p className="text-sm">
+            Catatan : {kost.note || "tidak ada catatan tambahan"}
+          </p>
         </div>
-        <div className="flex items-center gap-1">
-          <Wallet className="w-4 h-4" />
-          <p className="text-sm">Rp. {kost.price} /th</p>
-        </div>
-        <div className="flex items-center gap-1">
-          <Bath className="w-4 h-4" />
-          <p className="text-sm">Kamar mandi {kost.bathroom}</p>
-        </div>
+        <Link href={"/kost"} className="pb-4">
+          <Button className="bg-slate-900 text-white w-full gap-2">
+            <ArrowLeft className="w-4 h-4 text-white" />
+            Kembali ke daftar kost
+          </Button>
+        </Link>
       </div>
-      <div>
-        <p className="text-sm">
-          Catatan : {kost.note || "tidak ada catatan tambahan"}
-        </p>
-      </div>
-      <Link href={"/kost"} className="pb-4">
-        <Button className="bg-slate-900 text-white w-full gap-2">
-          <ArrowLeft className="w-4 h-4 text-white" />
-          Kembali ke daftar kost
-        </Button>
-      </Link>
     </div>
   );
 };

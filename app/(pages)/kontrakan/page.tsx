@@ -8,8 +8,8 @@ import React from "react";
 const PropertyPage = () => {
   return (
     <section className="max-padd-container py-20">
-      <h1 className="text-lg font-semibold">Daftar semua kontrakan</h1>
-      <div className="grid grid-cols-2 gap-4 pt-2 pb-4">
+      <h1 className="text-lg font-semibold md:pt-4">Daftar semua kontrakan</h1>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-2 pb-4">
         {PROPERTIES_KONTRAKAN.map((property) => (
           <div key={property.id}>
             <ProductCardKontrakan property={property} />
