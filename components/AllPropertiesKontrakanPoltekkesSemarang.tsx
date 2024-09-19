@@ -43,10 +43,10 @@ const AllPropertiesKontrakanPoltekkesSemarang = ({
         Daftar kontrakan area Poltekkes Semarang
       </p>
       <div
-        className={`grid grid-cols-2 gap-x-2 pb-4 ${
+        className={`grid gap-x-2 pb-4 ${
           filteredProperties.length === 0
             ? "grid-cols-1"
-            : "md:grid-cols-4 lg:grid-cols-6"
+            : "grid-cols-2 md:grid-cols-4 lg:grid-cols-6"
         }`}
       >
         {filteredProperties.length > 0 ? (
