@@ -52,10 +52,10 @@ const KontrakanDetailPage = () => {
           ))}
         </CarouselContent>
       </Carousel>
-      <div className="lg:flex lg:flex-col lg:gap-4">
+      <div className="grid gap-2 lg:flex lg:flex-col lg:gap-4">
         <h1 className="text-xl font-semibold">{kontrakan.title}</h1>
         <hr />
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-2">
           <div className="flex items-center gap-1">
             <Star className="w-4 h-4" />
             <p className="text-sm">{kontrakan.rating}</p>
@@ -69,7 +69,7 @@ const KontrakanDetailPage = () => {
             <p className="text-sm">Rp. {kontrakan.price} /th</p>
           </div>
         </div>
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1 pt-2 pb-2">
           <div className="flex items-center gap-1">
             <MdOutlineBed className="w-4 h-4" />
             <p className="text-sm">

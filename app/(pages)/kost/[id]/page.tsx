@@ -48,7 +48,7 @@ const KostDetailPage = () => {
           ))}
         </CarouselContent>
       </Carousel>
-      <div className="lg:flex lg:flex-col lg:gap-4">
+      <div className="grid gap-2 lg:flex lg:flex-col lg:gap-4">
         <h1 className="text-xl font-semibold">{kost.title}</h1>
         <hr />
         <div className="flex flex-col gap-1">
@@ -69,7 +69,7 @@ const KostDetailPage = () => {
             <p className="text-sm">Kamar mandi {kost.bathroom}</p>
           </div>
         </div>
-        <div>
+        <div className="pt-4">
           <p className="text-sm">
             Catatan : {kost.note || "tidak ada catatan tambahan"}
           </p>
