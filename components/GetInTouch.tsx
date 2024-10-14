@@ -51,7 +51,13 @@ const GetInTouch = () => {
                 <FooterColumn title={SOCIALS.title}>
                   <ul className="flex gap-4">
                     {SOCIALS.links.map((link) => (
-                      <Link href={"/"} key={link.id} className="text-xl">
+                      <Link
+                        href={link.link}
+                        key={link.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xl"
+                      >
                         {link.icon}
                       </Link>
                     ))}

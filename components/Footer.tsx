@@ -38,7 +38,7 @@ const Footer = () => {
             <FooterColumn title={FOOTER_CONTACT_INFO.title}>
               {FOOTER_CONTACT_INFO.links.map((link) => (
                 <Link
-                  href={"/"}
+                  href={link.link}
                   key={link.label}
                   className="flex gap-2 md:flex-col lg:flex-row text-sm"
                 >
@@ -50,7 +50,7 @@ const Footer = () => {
               <FooterColumn title={SOCIALS.title}>
                 <ul className="flex gap-4">
                   {SOCIALS.links.map((link) => (
-                    <Link href={"/"} key={link.id} className="text-xl">
+                    <Link href={link.link} key={link.id} className="text-xl">
                       {link.icon}
                     </Link>
                   ))}

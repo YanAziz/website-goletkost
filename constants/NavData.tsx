@@ -1,13 +1,7 @@
 import img from "@/public/assets/logo.jpg";
 
 import { LayoutDashboard, House, ContactRound, Lamp } from "lucide-react";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 // logo image
 export const LogoImage = {
@@ -41,18 +35,31 @@ export const NavLinks = [
 export const FOOTER_CONTACT_INFO = {
   title: "Contact Us",
   links: [
-    { label: "Contact Number", value: "+62 8556 6776 578" },
-    { label: "Email Address", value: "goletkost@gmail.com" },
+    {
+      label: "Contact Number",
+      value: "+62 857 1366 3602",
+      link: "https://wa.me/6285713663602",
+    },
+    {
+      label: "Email Address",
+      value: "goletkost@gmail.com",
+      link: "mailto:goletkost@gmail.com",
+    },
   ],
 };
 
 export const SOCIALS = {
   title: "Social",
   links: [
-    { icon: <FaFacebook />, id: "facebook" },
-    { icon: <FaInstagram />, id: "instagram" },
-    { icon: <FaTwitter />, id: "twitter" },
-    { icon: <FaYoutube />, id: "youtube" },
-    { icon: <FaLinkedin />, id: "linkedin" },
+    {
+      icon: <FaInstagram />,
+      id: "instagram",
+      link: "https://www.instagram.com/infokost_purwokerto.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    },
+    {
+      icon: <FaWhatsapp />,
+      id: "whatsapp",
+      link: "https://wa.me/6285713663602",
+    },
   ],
 };
