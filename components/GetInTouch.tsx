@@ -26,7 +26,7 @@ const GetInTouch = () => {
           <div className="flex flex-col justify-between gap-x-2 gap-y-4 px-4">
             <div className="flex flex-col">
               <Link href={"/"} className="flex items-center gap-x-2 pb-2">
-                <span className="font-semibold text-2xl">Get In Touch</span>
+                <span className="font-semibold text-2xl">Hubungi kami!</span>
               </Link>
               <hr />
               <p className="py-4">
